@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://your-solution-url.com)
-- Live Site URL: [Live](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/katrine9176/age-calculator-Frontendmentor)
+- Live Site URL: [Live](https://katrine9176.github.io/age-calculator-Frontendmentor/)
 
 ## My process
 
