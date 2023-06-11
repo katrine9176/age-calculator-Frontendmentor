@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="main">
+    <div class="main__inputs">
+      <div class="main__inputs-box">
+        <p class="time day">day</p>
+        <input type="number" placeholder="DD" class="selected-day" min="1" max="31">
+        <p class="error e-day">Must be a valid day</p>
+      </div>
+      <div class="main__inputs-box">
+        <p class="time month">month</p>
+        <input type="number" placeholder="MM" class="selected-month" min="1" max="12">
+        <p class="error e-month">Must be a valid month</p>
+      </div>
+      <div class="main__inputs-box">
+        <p class="time year">year</p>
+        <input type="number" placeholder="YYYY" class="selected-year">
+        <p class="error e-year">Must be in a past</p>
+      </div>
+    </div>
+    <p class="error whole-form">Must be a valid date</p>
+    <div class="main__line">
+      <button class="main__line-arrow"><img src="images/icon-arrow.svg" alt=""></button>
+    </div>
+    <div class="main__time-ago">
+      <p class="years-ago"><span>- -</span> years</p>
+      <p class="months-ago"><span>- -</span> months</p>
+      <p class="days-ago"><span>- -</span> days</p>
+    </div>
+  </main>
+
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/katrine9176" target="_blank">katrine9176</a>.</p>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

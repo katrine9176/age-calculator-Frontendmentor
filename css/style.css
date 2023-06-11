@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.main {
+  width: 310px;
+  padding: 3em 1.5em;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  border-bottom-right-radius: 140px;
+  overflow: hidden;
+}
+.main__inputs {
+  display: flex;
+  justify-content: space-evenly;
+}
+.main__inputs-box p {
+  font-size: 1.3rem;
+}
+.main__inputs-box input {
+  font-family: "Poppins", sans-serif;
+  padding: 1em;
+  width: 75px;
+  height: 40px;
+  border: 1px solid hsl(0, 0%, 86%);
+  border-radius: 8px;
+}
+.main__inputs-box input:focus {
+  outline: none;
+  border: 1px solid hsl(259, 100%, 65%);
+}
+.main__inputs-box .time {
+  color: hsl(0, 1%, 44%);
+  margin-bottom: 2px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.main .error {
+  display: none;
+  font-weight: 400;
+  font-style: italic;
+  color: hsl(0, 100%, 67%);
+}
+.main__line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6em auto;
+  width: 90%;
+  height: 1px;
+  background-color: hsl(0, 0%, 86%);
+}
+.main__line-arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.main__line-arrow img {
+  padding: 1em;
+  width: 45px;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+.main__line-arrow img:hover {
+  background-color: hsl(0, 0%, 8%);
+}
+.main__time-ago {
+  padding: 1.5em;
+}
+.main__time-ago p {
+  font-size: 4rem;
+  font-weight: 800;
+  font-style: italic;
+}
+.main__time-ago p span {
+  color: hsl(259, 100%, 65%);
+}
+.main .showError {
+  display: block;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 2px;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 5em;
+    width: 700px;
+  }
+  .main__inputs {
+    justify-content: start;
+  }
+  .main__inputs-box {
+    margin-right: 3em;
+  }
+  .main__inputs-box p {
+    font-size: 1.5rem;
+  }
+  .main__inputs-box input {
+    width: 120px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+  .main__inputs-box .time {
+    margin-bottom: 4px;
+  }
+  .main__line {
+    justify-content: flex-end;
+  }
+  .main__line-arrow img {
+    padding: 1.3em;
+    width: 70px;
+  }
+  .main__time-ago p {
+    font-size: 6rem;
+  }
+}/*# sourceMappingURL=style.css.map */

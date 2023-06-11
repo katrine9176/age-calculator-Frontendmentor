@@ -1,0 +1,184 @@
+//colors
+// - Purple: hsl(259, 100%, 65%)
+// - Light red: hsl(0, 100%, 67%)
+
+// ### Neutral
+
+// - White: hsl(0, 0%, 100%)
+// - Off white: hsl(0, 0%, 94%)
+// - Light grey: hsl(0, 0%, 86%)
+// - Smokey grey: hsl(0, 1%, 44%)
+// - Off black: hsl(0, 0%, 8%)
+$bg: hsl(0, 0%, 94%);
+$bg-main: hsl(0, 0%, 100%);
+$error: hsl(0, 100%, 67%);
+$time: hsl(0, 1%, 44%);
+$light-grey: hsl(0, 0%, 86%);
+$purple: hsl(259, 100%, 65%);
+$black: hsl(0, 0%, 8%);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	position: relative;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Poppins', sans-serif;
+	background-color: $bg;
+}
+
+.main {
+	width: 310px;
+	padding: 3em 1.5em;
+	background-color: $bg-main;
+	border-radius: 15px;
+	border-bottom-right-radius: 140px;
+	overflow: hidden;
+
+	&__inputs {
+		display: flex;
+		justify-content: space-evenly;
+
+		&-box {
+			p {
+				font-size: 1.3rem;
+			}
+
+			input {
+				font-family: 'Poppins', sans-serif;
+				padding: 1em;
+				width: 75px;
+				height: 40px;
+				border: 1px solid $light-grey;
+				border-radius: 8px;
+
+				&:focus {
+					outline: none; border: 1px solid $purple;
+				}
+			}
+
+			.time {
+				color: $time;
+				margin-bottom: 2px;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+			}
+		}
+	}
+
+	.error {
+		display: none;
+		font-weight: 400;
+		font-style: italic;
+		color: $error;
+	}
+
+	&__line {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 6em auto;
+		width: 90%;
+		height: 1px;
+		background-color: $light-grey;
+
+		&-arrow {
+			background: none;
+			border: none; 
+			cursor: pointer;
+
+			img {
+				padding: 1em;
+				width: 45px;
+				background-color: $purple;
+				border-radius: 50%;
+				transition: background-color .3s;
+				
+				&:hover {
+					background-color: $black;
+				}
+			}
+		}
+	}
+
+	&__time-ago {
+		padding: 1.5em;
+
+		p {
+			font-size: 4rem;
+			font-weight: 800;
+			font-style: italic;
+
+			span {
+				color: $purple;
+			}
+		}
+	}
+	.showError {
+		display: block;
+	}
+}
+
+.attribution {
+	position: absolute;
+	bottom: 2px;
+	font-size: 1.1rem;
+	text-align: center;
+
+	a {
+		color: hsl(228, 45%, 44%);
+	}
+}
+
+@media (min-width: 768px) {
+	.main {
+		padding: 5em;
+		width: 700px;
+
+		&__inputs {
+			justify-content: start;
+
+			&-box {
+				margin-right: 3em;
+
+				p {
+					font-size: 1.5rem;
+				}
+
+				input {
+					width: 120px;
+					height: 60px;
+					font-size: 1.5rem;
+				}
+
+				.time {
+					margin-bottom: 4px;
+				}
+			}
+		}
+
+		&__line {
+			justify-content: flex-end;
+
+			&-arrow img {
+				padding: 1.3em;
+				width: 70px;
+			}
+		}
+
+		&__time-ago p {
+			font-size: 6rem;
+		}
+	}
+	
+}
