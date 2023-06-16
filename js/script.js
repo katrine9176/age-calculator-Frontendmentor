@@ -66,6 +66,7 @@ const timeAgo = () => {
 	yearsAgo.innerHTML = years
 	monthsAgo.innerHTML = months
 	daysAgo.innerHTML = days
+
 }
 
-calculateBtn.addEventListener('click', isDateValid(daysAgo.value, monthsAgo.value))
+calculateBtn.addEventListener('click', ()=>isDateValid(daysAgo.value, monthsAgo.value))
